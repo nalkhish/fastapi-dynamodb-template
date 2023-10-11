@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "template"
+version = "0.1.0"
+description = "A template using fastapi and asynchronous aws dynamodb"
+authors = ["Nassir Al-Khishman <nassir.khishman@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = {extras = ["all"], version = "^0.103.0"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
