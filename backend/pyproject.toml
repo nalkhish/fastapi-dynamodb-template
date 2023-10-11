@@ -8,8 +8,11 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 fastapi = {extras = ["all"], version = "^0.103.0"}
+aiobotocore = "^2.6.0"
+python-dotenv = "^1.0.0"
 
 [tool.poetry.group.dev.dependencies]
+types-aiobotocore = {extras = ["essential"], version = "^2.6.0"}
 black = "^23.7.0"
 isort = "^5.12.0"
 
