@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from template.middleware.auth import AuthMiddleware
+from template.replace_me.routes import router as replace_me_router
 
 app = FastAPI()
 
@@ -17,7 +18,9 @@ app.add_middleware(
 )
 
 
-
 @app.get("/")
 async def root():
     return "You are at the index"
+
+
+app.include_router(replace_me_router)
